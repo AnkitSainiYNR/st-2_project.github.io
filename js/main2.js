@@ -1,3 +1,5 @@
+// This is API part of project using AJAX
+
 let dataObj = undefined;
 
 function ajax_get(url) {

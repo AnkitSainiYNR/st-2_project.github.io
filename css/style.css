@@ -95,11 +95,6 @@ p {
   right: -60px;
 }
 
-.display-1 {
-  font-size: 160px;
-  font-weight: 1000;
-}
-
 .position-absolute {
   font-weight: 700;
 }
@@ -130,11 +125,6 @@ p {
     right: 0px;
     top: 30px;
   }
-}
-
-/* =================== Quality ======================*/
-.ex-me {
-  margin-top: 35px;
 }
 
 /* ========================== Contact Us ========================*/

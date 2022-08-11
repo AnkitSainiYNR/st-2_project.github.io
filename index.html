@@ -60,16 +60,11 @@
           <a href="#home" class="nav-item nav-link active">Home</a>
           <a href="#about" class="nav-item nav-link">About</a>
           <a href="#management" class="nav-item nav-link">Management</a>
+          <a href="#addperson" class="nav-item nav-link">Add Person</a>
           <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
         <a
-          href="addperson.html"
-          class="btn btn-menu d-none d-lg-block"
-          style="background-color: #457efa; color: #ffffff"
-          >Add a Person</a
-        >
-        <a
-          href=""
+          href="#home"
           class="btn btn-menu d-none d-lg-block"
           style="background-color: #457efa; color: #ffffff"
           >Login or Sign Up</a
@@ -122,12 +117,7 @@
         <div
           class="position-relative d-flex align-items-center justify-content-center"
         >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            About
-          </h1>
+          <br /><br /><br /><br /><br /><br /><br />
           <h1 class="position-absolute text-uppercase text-primary">About</h1>
         </div>
         <div class="row align-items-center">
@@ -135,7 +125,7 @@
             <img class="img-fluid rounded w-100" src="img/about.jpg" alt="" />
           </div>
           <div class="col-lg-7">
-            <h3 class="mb-4">About Person Management Application</h3>
+            <h3 class="mb-4">About This Application</h3>
             <p>
               This is Person Management Application which helps us to record
               data of the people when we add it or display it.
@@ -153,12 +143,7 @@
         <div
           class="position-relative d-flex align-items-center justify-content-center"
         >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            People
-          </h1>
+          <br /><br /><br /><br /><br /><br /><br />
           <h1 class="position-absolute text-uppercase text-primary">People</h1>
         </div>
         <div class="row align-items-center">
@@ -221,18 +206,172 @@
       </div>
     </div>
 
+    <!-- add a new person form -->
+    <div class="container" id="addperson">
+      <div
+        class="position-relative d-flex align-items-center justify-content-center"
+      >
+        <br /><br /><br /><br /><br /><br /><br />
+        <h1 class="position-absolute text-uppercase text-primary">
+          Add Person
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form action="addperson.php" method="post">
+            <h3>Details:</h3>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                placeholder="Enter username"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="street">Street</label>
+              <input
+                type="text"
+                class="form-control"
+                id="street"
+                name="street"
+                placeholder="Enter street"
+              />
+            </div>
+            <div class="form-group">
+              <label for="suite">Suite</label>
+              <input
+                type="text"
+                class="form-control"
+                id="suite"
+                name="suite"
+                placeholder="Enter suite"
+              />
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                name="city"
+                placeholder="Enter city"
+              />
+            </div>
+            <div class="form-group">
+              <label for="zipcode">Zipcode</label>
+              <input
+                type="text"
+                class="form-control"
+                id="zipcode"
+                name="zipcode"
+                placeholder="Enter zipcode"
+              />
+            </div>
+            <div class="form-group">
+              <label for="geo">Geo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="geo"
+                name="geo"
+                placeholder="Enter Lat"
+              />
+              <br />
+              <input
+                type="text"
+                class="form-control"
+                id="geo"
+                name="geo"
+                placeholder="Enter Long"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone"
+              />
+            </div>
+            <div class="form-group">
+              <label for="website">Website</label>
+              <input
+                type="text"
+                class="form-control"
+                id="website"
+                name="website"
+                placeholder="Enter website"
+              />
+            </div>
+            <h3>Company:</h3>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="bs">Bs:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="bs"
+                name="bs"
+                placeholder="Enter bs"
+              />
+            </div>
+            <div class="form-group">
+              <label for="catchPhrase">Catch Phrase:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="catchPhrase"
+                name="catchPhrase"
+                placeholder="Enter catch phrase"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact Start -->
     <div class="container-fluid py-5" id="contact">
       <div class="container">
         <div
           class="position-relative d-flex align-items-center justify-content-center"
         >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            Contact Us
-          </h1>
+          <br /><br /><br /><br /><br /><br /><br />
           <h1 class="position-absolute text-uppercase text-primary">
             Contact Us
           </h1>
@@ -308,6 +447,7 @@
     <!-- Footer Start -->
     <div
       class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5"
+      id="footer"
     >
       <div class="container text-center py-5">
         <div class="d-flex justify-content-center mb-4">
@@ -333,8 +473,9 @@
           ></a>
         </div>
         <p class="m-0">
-          <a class="text-white font-weight-bold" href="#">Person</a> Management
-          <a class="text-white font-weight-bold" href="#">Application</a>
+          <a class="text-white font-weight-bold" href="#footer">Person</a>
+          Management
+          <a class="text-white font-weight-bold" href="#footer">Application</a>
         </p>
       </div>
     </div>
